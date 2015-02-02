@@ -1,6 +1,7 @@
-![Alt text](https://cloud.githubusercontent.com/assets/5075567/6008656/2ec7bebe-aad8-11e4-97d8-b917efd2bf90.png)
-#Things that Ansible can do, 
-### And, brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
+## A brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
+![Alt text](https://cloud.githubusercontent.com/assets/5075567/6008656/2ec7bebe-aad8-11e4-97d8-b917efd2bf90.png "The DevOps Landscape")
+##Let's talk about Ansible 
+
 
 ##Configuration Management - like Chef, Puppet or Salt
 - writing a state description for our servers
