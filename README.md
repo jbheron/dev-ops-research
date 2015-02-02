@@ -1,4 +1,4 @@
-## A brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
+## A brief visual map of the DevOps Landscape
 ![Alt text](https://cloud.githubusercontent.com/assets/5075567/6008656/2ec7bebe-aad8-11e4-97d8-b917efd2bf90.png "The DevOps Landscape")
 ##Let's talk about Ansible 
 
