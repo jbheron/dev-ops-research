@@ -1,4 +1,3 @@
-# dev-ops-research
 
 #Things that Ansible can do, and a brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
 
@@ -40,14 +39,14 @@
 Requirements for understanding how to use Ansible
 Familiarity with one Linux Distribution (Ubuntu, CentOS, RHEL), and
 Ability to:
-• connect to a remote machine using ssh
-• interact with the bash command-line shell (pipes and redirection)
-• install packages
-• use the sudo command
-• check and set file permissions
-• start and stop services
-• set environment variables
-• write scripts (any language)
+  - connect to a remote machine using ssh
+  - interact with the bash command-line shell (pipes and redirection)
+  - install packages
+  - use the sudo command
+  - check and set file permissions
+  - start and stop services
+  - set environment variables
+  - write scripts (any language)
 Ansible uses YAML and the Jinja2 templating language
 
 Anisble is open source, and free, including all of the modules
