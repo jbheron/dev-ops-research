@@ -1,4 +1,4 @@
-
+![Alt text](https://cloud.githubusercontent.com/assets/5075567/6008656/2ec7bebe-aad8-11e4-97d8-b917efd2bf90.png)
 #Things that Ansible can do, 
 ### And, brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
 
