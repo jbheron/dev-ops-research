@@ -1,5 +1,6 @@
 
-#Things that Ansible can do, and a brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
+#Things that Ansible can do, 
+### And, brief tour of Dev Ops/Architectur/IT/Netwrok Admin tasks:
 
 ##Configuration Management - like Chef, Puppet or Salt
 - writing a state description for our servers
@@ -37,6 +38,7 @@
   - very thin abstraction - you must use apt or yum modules for example, rather than new Ansible abstractions
 
 Requirements for understanding how to use Ansible
+
 Familiarity with one Linux Distribution (Ubuntu, CentOS, RHEL), and
 Ability to:
   - connect to a remote machine using ssh
