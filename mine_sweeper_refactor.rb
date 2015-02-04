@@ -22,26 +22,24 @@ class MineSweeperBoardstateModel
     end
   end
 
-  def populate_neighbor_mine_count
-    @board.each_with_index do |row, row_index|
-      row.each_with_index do |element, i|
-        if element != "*"
-          neighbor_bomb_count = 0
-          up_and_left         = @board[row_index - 1][i - 1] unless i == 0 || row_index == 0
-          up                  = @board[row_index - 1][i] unless row_index == 0
-          up_and_right        = @board[row_index - 1][i + 1] unless row_index == 0
-          left                = @board[row_index][i - 1] unless i == 0
-          right               = @board[row_index][i + 1]
-          down_and_left       = @board[row_index + 1][i - 1] unless i == 0 || row_index == @board.count - 1
-          down                = @board[row_index + 1][i] unless row_index == @board.count - 1
-          down_and_right      = [row_index + 1][i + 1] unless row_index == @board.count - 1
-          neighbor_positions  = [up_and_left, up, up_and_right, left, right, down_and_left, down, down_and_right]
-
-          neighbor_positions.each { |el| neighbor_bomb_count += 1 if el == "*"}
-          neighbor_bomb_count == 0 ? @board[row_index][i] = " " : @board[row_index][i] = neighbor_bomb_count
+    def populate_neighbor_mine_count
+      @board.each_with_index do |row, row_index|
+        row.each_with_index do |element, i|
+          if element != "*"
+            neighbor_bomb_count = 0
+            neighbor_bomb_count += 1 if @board[row_index - 1][i - 1] == "*" unless i == 0 || row_index == 0 #check up_and_left
+            neighbor_bomb_count += 1 if @board[row_index - 1][i] == "*" unless row_index == 0 #check up
+            neighbor_bomb_count += 1 if @board[row_index - 1][i + 1] == "*" unless row_index == 0 #check up_and_right
+            neighbor_bomb_count += 1 if @board[row_index][i - 1] == "*" unless i == 0 #check left
+            neighbor_bomb_count += 1 if @board[row_index][i + 1] == "*" #check right
+            neighbor_bomb_count += 1 if @board[row_index + 1][i - 1] == "*" unless i == 0 || row_index == @board.count - 1 #check down_and_left
+            neighbor_bomb_count += 1 if @board[row_index + 1][i] == "*" unless row_index == @board.count - 1 #check down
+            neighbor_bomb_count += 1 if [row_index + 1][i + 1] == "*" unless row_index == @board.count - 1 #check down_and_right
+            @board[row_index][i] = neighbor_bomb_count if neighbor_bomb_count > 0 #insert count or whitespace
+          end
         end
       end
-    end
+
   end
 
   # ======= View
