@@ -35,7 +35,7 @@ class MineSweeperBoardstateModel
           neighbor_bomb_count += 1 if @board[row_index + 1][i - 1] == "*" unless i == 0 || row_index == @board.count - 1 #check down_and_left
           neighbor_bomb_count += 1 if @board[row_index + 1][i] == "*" unless row_index == @board.count - 1 #check down
           neighbor_bomb_count += 1 if [row_index + 1][i + 1] == "*" unless row_index == @board.count - 1 #check down_and_right
-          @board[row_index][i] = neighbor_bomb_count if neighbor_bomb_count > 0 #insert count or whitespace
+          @board[row_index][i] = neighbor_bomb_count if neighbor_bomb_count > 0 #insert count as needed
         end
       end
     end
